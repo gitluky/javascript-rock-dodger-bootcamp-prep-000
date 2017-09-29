@@ -126,7 +126,7 @@ function endGame() {
       allRocks[i].remove()
     }
 
-  window.removeEventListener('keydown', moveDodger)
+  document.removeEventListener('keydown', moveDodger)
   }
   alert('YOU LOSE!')
 }
@@ -189,7 +189,7 @@ function positionToInteger(p) {
 }
 
 function start() {
-  window.addEventListener('keydown', moveDodger)
+  document.addEventListener('keydown', moveDodger)
 
   START.style.display = 'none'
 
